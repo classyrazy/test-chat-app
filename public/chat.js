@@ -1,5 +1,7 @@
 // make connection
-const socket = io.connect("http://localhost:3000")
+// const socket = io.connect("https://test-chat-app.vercel.app/")
+// const socket = io.connect("http://localhost:3000")
+const socket = io();
 const nameInput = document.querySelector("#handle")
 const messageInput = document.querySelector("#message")
 const submitBtn = document.querySelector("#submit")
