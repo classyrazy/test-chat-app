@@ -4,9 +4,10 @@ const socket = require("socket.io")
 const app = express();
 
 // listen for request
+const port = process.env.PORT || 3000
 
-const server = app.listen(3000, ()=>{
-    console.log("already listening on port 3000")
+const server = app.listen(port, ()=>{
+    console.log(`already listening on port ${port}`)
 })
 
 //middleware and static
